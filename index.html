@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accueil - Grand Palais</title>
+    <meta
+      name="description"
+      content="Découvrez le Grand Palais, ses expositions et événements. Un lieu emblématique de la culture à Paris."
+    />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <style type="text/tailwindcss">
+      @theme {
+        --color-gp-gold: #806721;
+        --color-gp-dark: #1a1a1a;
+      }
+    </style>
+  </head>
+  <body class="bg-white">
+    <a
+      href="#hero-content"
+      class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-gp-gold text-white px-4 py-2 rounded"
+      aria-label="Passer directement au contenu principal"
+    >
+      Aller au contenu principal
+    </a>
+
+    <nav
+      class="bg-white shadow-lg border-b border-gray-100"
+      role="navigation"
+      aria-label="Navigation principale"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+          <div class="flex-shrink-0">
+            <a
+              href="/"
+              class="text-3xl font-bold text-gp-dark tracking-tight"
+              aria-current="page"
+              aria-label="Retour à l'accueil du Grand Palais"
+              >GrandPalais</a
+            >
+          </div>
+          <div class="hidden md:flex items-center space-x-8">
+            <a
+              href="#"
+              class="text-gray-700 hover:text-gp-gold transition-colors duration-300"
+              aria-label="Voir le programme des expositions"
+              >PROGRAMME</a
+            >
+            <a
+              href="#"
+              class="text-gray-700 hover:text-gp-gold transition-colors duration-300"
+              aria-label="Accéder au magazine du Grand Palais"
+              >MAGAZINE</a
+            >
+            <a
+              href="#"
+              class="text-gray-700 hover:text-gp-gold transition-colors duration-300"
+              aria-label="Consulter les informations pratiques"
+              >INFOS PRATIQUES</a
+            >
+            <a
+              href="#"
+              class="bg-gp-gold text-white px-6 py-3 rounded hover:bg-opacity-90 transition-all duration-300"
+              aria-label="Acheter des billets pour les expositions"
+              >Billetterie</a
+            >
+            <a
+              href="/contact.html"
+              class="border-2 border-gp-dark px-6 py-[10px] rounded hover:bg-gp-dark hover:text-white transition-all duration-300"
+              aria-label="Accéder au formulaire de contact"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      class="relative h-[600px]"
+      role="banner"
+      aria-label="En-tête de la page"
+    >
+      <img
+        id="hero-content"
+        src="https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+        alt="Vue majestueuse du Grand Palais illuminé la nuit, mettant en valeur son architecture emblématique et sa verrière"
+        class="w-full h-full object-cover"
+      />
+      <div class="absolute inset-0 bg-black/50" aria-hidden="true"></div>
+      <div
+        class="absolute inset-0 flex flex-col items-center justify-center text-center px-4"
+      >
+        <h1
+          class="text-5xl md:text-7xl text-white font-bold tracking-tight mb-6"
+        >
+          Bienvenue au Grand Palais
+        </h1>
+        <p class="text-xl md:text-2xl text-white max-w-3xl">
+          Un lieu emblématique dédié à l'art et à la culture au cœur de Paris
+        </p>
+      </div>
+    </div>
+
+    <main class="max-w-7xl mx-auto px-4 py-20">
+      <section aria-labelledby="intro-heading" class="mb-20">
+        <h2 id="intro-heading" class="text-4xl font-bold mb-8 text-gp-dark">
+          Le Grand Palais en 2025
+        </h2>
+        <p class="text-xl text-gray-700 mb-6">
+          Après 4 ans de travaux, le monument sublimé vous accueille entre
+          grandes expositions, spectacles et expériences inédites. Un lieu
+          incontournable pour tous les curieux ou passionnés d'art et de
+          culture.
+        </p>
+      </section>
+
+      <section aria-labelledby="expositions-heading" class="mb-20">
+        <h2
+          id="expositions-heading"
+          class="text-4xl font-bold mb-8 text-gp-dark"
+        >
+          Expositions en cours
+        </h2>
+
+        <div class="overflow-x-auto">
+          <table
+            class="w-full border-collapse"
+            role="table"
+            aria-label="Programme des expositions actuelles"
+          >
+            <caption class="sr-only">
+              Programme des expositions du Grand Palais
+            </caption>
+            <thead>
+              <tr>
+                <th
+                  scope="col"
+                  class="border p-4 bg-gp-dark text-white text-left"
+                >
+                  Exposition
+                </th>
+                <th
+                  scope="col"
+                  class="border p-4 bg-gp-dark text-white text-left"
+                >
+                  Lieu
+                </th>
+                <th
+                  scope="col"
+                  class="border p-4 bg-gp-dark text-white text-left"
+                >
+                  Dates
+                </th>
+                <th
+                  scope="col"
+                  class="border p-4 bg-gp-dark text-white text-left"
+                >
+                  Statut
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" class="border p-4">Chiharu Shiota</th>
+                <td class="border p-4">Grand Palais</td>
+                <td class="border p-4">11 décembre 2024 - 19 mars 2025</td>
+                <td class="border p-4">
+                  <span
+                    class="bg-green-100 text-green-800 px-2 py-1 rounded"
+                    aria-label="Exposition actuellement en cours"
+                    >En cours</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <th scope="row" class="border p-4">
+                  Du Cœur à la Main : Dolce&Gabbana
+                </th>
+                <td class="border p-4">Grand Palais</td>
+                <td class="border p-4">10 janvier - 31 mars 2025</td>
+                <td class="border p-4">
+                  <span
+                    class="bg-green-100 text-green-800 px-2 py-1 rounded"
+                    aria-label="Exposition actuellement en cours"
+                    >En cours</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <th scope="row" class="border p-4">Tous Léger !</th>
+                <td class="border p-4">Musée du Luxembourg</td>
+                <td class="border p-4">19 mars - 20 juillet 2025</td>
+                <td class="border p-4">
+                  <span
+                    class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded"
+                    aria-label="Exposition à venir prochainement"
+                    >À venir</span
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section
+        aria-labelledby="cta-heading"
+        class="bg-gp-dark text-white p-12 rounded-xl"
+      >
+        <h2 id="cta-heading" class="text-3xl font-bold mb-6">
+          Préparez votre visite
+        </h2>
+        <p class="text-xl mb-8">
+          Réservez vos billets en ligne et découvrez nos expositions
+          exceptionnelles
+        </p>
+        <a
+          href="#"
+          class="inline-block bg-gp-gold text-white px-8 py-4 rounded-lg hover:bg-opacity-90 transition-all duration-300"
+          aria-label="Réserver vos billets pour visiter les expositions"
+        >
+          Réserver mes billets
+        </a>
+      </section>
+    </main>
+
+    <footer class="bg-gp-dark text-white" role="contentinfo">
+      <div class="max-w-7xl mx-auto px-4 py-16">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <div>
+            <h2 class="text-2xl font-bold mb-6">Grand Palais</h2>
+            <address
+              class="text-gray-100 not-italic text-lg"
+              aria-label="Adresse du Grand Palais"
+            >
+              3 avenue du Général Eisenhower<br />
+              75008 Paris
+            </address>
+          </div>
+          <nav aria-label="Liens utiles">
+            <h2 class="text-2xl font-bold mb-6">Liens utiles</h2>
+            <ul class="space-y-4">
+              <li role="listitem">
+                <a
+                  href="#"
+                  class="text-gray-100 hover:text-white transition-colors duration-300"
+                  aria-label="Consulter les mentions légales"
+                  >Mentions légales</a
+                >
+              </li>
+              <li role="listitem">
+                <a
+                  href="#"
+                  class="text-gray-100 hover:text-white transition-colors duration-300"
+                  aria-label="Consulter notre politique de confidentialité"
+                  >Politique de confidentialité</a
+                >
+              </li>
+              <li role="listitem">
+                <a
+                  href="#"
+                  class="text-gray-100 hover:text-white transition-colors duration-300"
+                  aria-label="Consulter le plan du site"
+                  >Plan du site</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div>
+            <h2 class="text-2xl font-bold mb-6">Suivez-nous</h2>
+            <ul class="flex space-x-6">
+              <li role="listitem">
+                <a
+                  href="#"
+                  class="text-gray-100 hover:text-white transition-colors duration-300"
+                  aria-label="Suivez-nous sur Facebook"
+                  >Facebook</a
+                >
+              </li>
+              <li role="listitem">
+                <a
+                  href="#"
+                  class="text-gray-100 hover:text-white transition-colors duration-300"
+                  aria-label="Suivez-nous sur Twitter"
+                  >Twitter</a
+                >
+              </li>
+              <li role="listitem">
+                <a
+                  href="#"
+                  class="text-gray-100 hover:text-white transition-colors duration-300"
+                  aria-label="Suivez-nous sur Instagram"
+                  >Instagram</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
