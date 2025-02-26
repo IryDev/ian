@@ -1,0 +1,29 @@
+.nav-link {
+  @apply hover:text-gp-gold transition-colors duration-300;
+}
+
+.form-input {
+  @apply w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gp-gold focus:border-transparent;
+  @apply text-gray-900;
+}
+
+.form-input::placeholder {
+  @apply text-gray-500;
+}
+
+.btn {
+  @apply px-6 py-2 bg-gp-gold text-white rounded-md hover:bg-opacity-90 transition-all duration-300;
+  @apply focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gp-gold;
+}
+
+.error-message {
+  @apply text-red-700 text-sm mt-1 hidden;
+}
+
+*:focus {
+  @apply outline-none ring-2 ring-gp-gold ring-offset-2;
+}
+
+.text-gray-400 {
+  @apply hover:text-white focus:text-white;
+}
