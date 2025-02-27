@@ -88,7 +88,10 @@
       />
       <div class="absolute inset-0 bg-black/50" aria-hidden="true"></div>
       <div class="absolute inset-0 flex items-center justify-center">
-        <h1 class="text-5xl md:text-7xl text-white font-bold tracking-tight">
+        <h1
+          class="text-5xl md:text-7xl text-white font-bold tracking-tight"
+          tabindex="0"
+        >
           Contactez-nous
         </h1>
       </div>
@@ -96,7 +99,10 @@
 
     <!-- Contact Form Section -->
     <main id="main-content" class="max-w-3xl mx-auto px-4 py-20">
-      <h2 class="text-4xl font-bold mb-8 text-[#1a1a1a]">
+      <h2
+        class="text-4xl font-bold mb-8 text-[#1a1a1a] focus:outline-none focus:ring-2 focus:ring-[#806721]"
+        tabindex="0"
+      >
         Formulaire de contact
       </h2>
 
@@ -104,7 +110,8 @@
         <div>
           <label
             for="name"
-            class="block text-sm font-medium text-gray-700 mb-1"
+            class="block text-sm font-medium text-gray-700 mb-1 focus:outline-none focus:ring-2 focus:ring-[#806721] rounded"
+            tabindex="0"
           >
             Nom complet <span aria-label="obligatoire">*</span>
           </label>
@@ -128,7 +135,8 @@
         <div>
           <label
             for="email"
-            class="block text-sm font-medium text-gray-700 mb-1"
+            class="block text-sm font-medium text-gray-700 mb-1 focus:outline-none focus:ring-2 focus:ring-[#806721] rounded"
+            tabindex="0"
           >
             Email <span aria-label="obligatoire">*</span>
           </label>
@@ -152,7 +160,8 @@
         <div>
           <label
             for="subject"
-            class="block text-sm font-medium text-gray-700 mb-1"
+            class="block text-sm font-medium text-gray-700 mb-1 focus:outline-none focus:ring-2 focus:ring-[#806721] rounded"
+            tabindex="0"
           >
             Sujet <span aria-label="obligatoire">*</span>
           </label>
@@ -181,7 +190,8 @@
         <div>
           <label
             for="message"
-            class="block text-sm font-medium text-gray-700 mb-1"
+            class="block text-sm font-medium text-gray-700 mb-1 focus:outline-none focus:ring-2 focus:ring-[#806721] rounded"
+            tabindex="0"
           >
             Message <span aria-label="obligatoire">*</span>
           </label>
@@ -205,7 +215,7 @@
         <div>
           <button
             type="submit"
-            class="w-full md:w-auto px-8 py-4 bg-[#806721] text-white rounded-lg hover:bg-opacity-90 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#806721]"
+            class="w-full md:w-auto px-8 py-4 bg-[#806721] text-white rounded-lg hover:bg-opacity-90 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#806721]"
             aria-label="Envoyer le formulaire de contact"
           >
             Envoyer le message
@@ -219,40 +229,60 @@
       <div class="max-w-7xl mx-auto px-4 py-16">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div>
-            <h2 class="text-2xl font-bold mb-6">Grand Palais</h2>
+            <h2
+              class="text-2xl font-bold mb-6 focus:outline-none focus:ring-2 focus:ring-white"
+              tabindex="0"
+            >
+              Grand Palais
+            </h2>
             <address
-              class="text-gray-100 not-italic text-lg"
+              class="text-gray-100 not-italic text-lg group focus-within:ring-2 focus-within:ring-white focus-within:rounded-lg p-2"
               aria-label="Adresse du Grand Palais"
             >
-              3 avenue du Général Eisenhower<br />
-              75008 Paris
+              <span
+                class="block focus:outline-none focus:ring-2 focus:ring-white focus:rounded"
+                tabindex="0"
+              >
+                3 avenue du Général Eisenhower
+              </span>
+              <span
+                class="block focus:outline-none focus:ring-2 focus:ring-white focus:rounded"
+                tabindex="0"
+              >
+                75008 Paris
+              </span>
             </address>
           </div>
           <nav aria-label="Liens utiles">
-            <h2 class="text-2xl font-bold mb-6">Liens utiles</h2>
+            <h2
+              class="text-2xl font-bold mb-6 focus:outline-none focus:ring-2 focus:ring-white"
+              tabindex="0"
+            >
+              Liens utiles
+            </h2>
             <ul class="space-y-4">
-              <li>
+              <li role="listitem">
                 <a
                   href="#"
-                  class="text-gray-100 hover:text-white transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#1a1a1a] rounded px-2 py-1"
+                  class="text-gray-100 hover:text-white transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#1a1a1a]"
                   aria-label="Consulter les mentions légales"
                 >
                   Mentions légales
                 </a>
               </li>
-              <li>
+              <li role="listitem">
                 <a
                   href="#"
-                  class="text-gray-100 hover:text-white transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#1a1a1a] rounded px-2 py-1"
+                  class="text-gray-100 hover:text-white transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#1a1a1a]"
                   aria-label="Consulter notre politique de confidentialité"
                 >
                   Politique de confidentialité
                 </a>
               </li>
-              <li>
+              <li role="listitem">
                 <a
                   href="#"
-                  class="text-gray-100 hover:text-white transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#1a1a1a] rounded px-2 py-1"
+                  class="text-gray-100 hover:text-white transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#1a1a1a]"
                   aria-label="Consulter le plan du site"
                 >
                   Plan du site
@@ -261,30 +291,35 @@
             </ul>
           </nav>
           <div>
-            <h2 class="text-2xl font-bold mb-6">Suivez-nous</h2>
+            <h2
+              class="text-2xl font-bold mb-6 focus:outline-none focus:ring-2 focus:ring-white"
+              tabindex="0"
+            >
+              Suivez-nous
+            </h2>
             <ul class="flex space-x-6">
-              <li>
+              <li role="listitem">
                 <a
                   href="#"
-                  class="text-gray-100 hover:text-white transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#1a1a1a] rounded px-2 py-1"
+                  class="text-gray-100 hover:text-white transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#1a1a1a]"
                   aria-label="Suivez-nous sur Facebook"
                 >
                   Facebook
                 </a>
               </li>
-              <li>
+              <li role="listitem">
                 <a
                   href="#"
-                  class="text-gray-100 hover:text-white transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#1a1a1a] rounded px-2 py-1"
+                  class="text-gray-100 hover:text-white transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#1a1a1a]"
                   aria-label="Suivez-nous sur Twitter"
                 >
                   Twitter
                 </a>
               </li>
-              <li>
+              <li role="listitem">
                 <a
                   href="#"
-                  class="text-gray-100 hover:text-white transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#1a1a1a] rounded px-2 py-1"
+                  class="text-gray-100 hover:text-white transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#1a1a1a]"
                   aria-label="Suivez-nous sur Instagram"
                 >
                   Instagram

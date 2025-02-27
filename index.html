@@ -95,10 +95,11 @@
       >
         <h1
           class="text-5xl md:text-7xl text-white font-bold tracking-tight mb-6"
+          tabindex="0"
         >
           Bienvenue au Grand Palais
         </h1>
-        <p class="text-xl md:text-2xl text-white max-w-3xl">
+        <p class="text-xl md:text-2xl text-white max-w-3xl" tabindex="0">
           Un lieu emblématique dédié à l'art et à la culture au cœur de Paris
         </p>
       </div>
@@ -106,10 +107,17 @@
 
     <main class="max-w-7xl mx-auto px-4 py-20">
       <section aria-labelledby="intro-heading" class="mb-20">
-        <h2 id="intro-heading" class="text-4xl font-bold mb-8 text-gp-dark">
+        <h2
+          id="intro-heading"
+          class="text-4xl font-bold mb-8 text-gp-dark focus:outline-none focus:ring-2 focus:ring-gp-gold"
+          tabindex="0"
+        >
           Le Grand Palais en 2025
         </h2>
-        <p class="text-xl text-gray-700 mb-6">
+        <p
+          class="text-xl text-gray-700 mb-6 focus:outline-none focus:ring-2 focus:ring-gp-gold"
+          tabindex="0"
+        >
           Après 4 ans de travaux, le monument sublimé vous accueille entre
           grandes expositions, spectacles et expériences inédites. Un lieu
           incontournable pour tous les curieux ou passionnés d'art et de
@@ -120,22 +128,17 @@
       <section aria-labelledby="expositions-heading" class="mb-20">
         <h2
           id="expositions-heading"
-          class="text-4xl font-bold mb-8 text-gp-dark"
+          class="text-4xl font-bold mb-8 text-gp-dark focus:outline-none focus:ring-2 focus:ring-gp-gold"
+          tabindex="0"
         >
           Expositions en cours
         </h2>
 
         <div class="overflow-x-auto">
-          <!-- Ajout d'un lien pour accéder directement au tableau -->
-          <a href="#expositions-table" class="sr-only focus:not-sr-only focus:inline-block focus:mb-4 text-gp-gold underline">
-            Accéder au tableau des expositions
-          </a>
-          
           <table
             id="expositions-table"
             class="w-full border-collapse"
             aria-labelledby="expositions-heading"
-            tabindex="0"
           >
             <caption class="sr-only">
               Programme des expositions du Grand Palais
@@ -144,74 +147,123 @@
               <tr>
                 <th
                   scope="col"
-                  class="border p-4 bg-gp-dark text-white text-left"
+                  class="border p-4 bg-gp-dark text-white text-left focus:outline-none focus:ring-2 focus:ring-gp-gold focus:ring-inset"
+                  tabindex="0"
                 >
                   Exposition
                 </th>
                 <th
                   scope="col"
-                  class="border p-4 bg-gp-dark text-white text-left"
+                  class="border p-4 bg-gp-dark text-white text-left focus:outline-none focus:ring-2 focus:ring-gp-gold focus:ring-inset"
+                  tabindex="0"
                 >
                   Lieu
                 </th>
                 <th
                   scope="col"
-                  class="border p-4 bg-gp-dark text-white text-left"
+                  class="border p-4 bg-gp-dark text-white text-left focus:outline-none focus:ring-2 focus:ring-gp-gold focus:ring-inset"
+                  tabindex="0"
                 >
                   Dates
                 </th>
                 <th
                   scope="col"
-                  class="border p-4 bg-gp-dark text-white text-left"
+                  class="border p-4 bg-gp-dark text-white text-left focus:outline-none focus:ring-2 focus:ring-gp-gold focus:ring-inset"
+                  tabindex="0"
                 >
                   Statut
                 </th>
               </tr>
             </thead>
             <tbody>
-              <tr tabindex="0">
+              <tr>
                 <th scope="row" class="border p-4">
-                  <a href="#" class="text-gp-gold hover:underline focus:underline focus:outline-gp-gold focus:outline-offset-2" tabindex="0">
+                  <a
+                    href="#"
+                    class="text-gp-gold hover:underline focus:underline focus:outline-none focus:ring-2 focus:ring-gp-gold focus:ring-offset-2"
+                  >
                     Chiharu Shiota
                   </a>
                 </th>
-                <td class="border p-4">Grand Palais</td>
-                <td class="border p-4">11 décembre 2024 - 19 mars 2025</td>
-                <td class="border p-4">
-                  <span
-                    class="bg-green-100 text-green-800 px-2 py-1 rounded"
-                    >En cours</span
-                  >
+                <td
+                  class="border p-4 focus:outline-none focus:ring-2 focus:ring-gp-gold focus:ring-inset"
+                  tabindex="0"
+                >
+                  Grand Palais
+                </td>
+                <td
+                  class="border p-4 focus:outline-none focus:ring-2 focus:ring-gp-gold focus:ring-inset"
+                  tabindex="0"
+                >
+                  11 décembre 2024 - 19 mars 2025
+                </td>
+                <td
+                  class="border p-4 focus:outline-none focus:ring-2 focus:ring-gp-gold focus:ring-inset"
+                  tabindex="0"
+                >
+                  <span class="bg-green-100 text-green-800 px-2 py-1 rounded">
+                    En cours
+                  </span>
                 </td>
               </tr>
-              <tr tabindex="0">
+              <tr>
                 <th scope="row" class="border p-4">
-                  <a href="#" class="text-gp-gold hover:underline focus:underline focus:outline-gp-gold focus:outline-offset-2" tabindex="0">
+                  <a
+                    href="#"
+                    class="text-gp-gold hover:underline focus:underline focus:outline-none focus:ring-2 focus:ring-gp-gold focus:ring-offset-2"
+                  >
                     Du Cœur à la Main : Dolce&Gabbana
                   </a>
                 </th>
-                <td class="border p-4">Grand Palais</td>
-                <td class="border p-4">10 janvier - 31 mars 2025</td>
-                <td class="border p-4">
-                  <span
-                    class="bg-green-100 text-green-800 px-2 py-1 rounded"
-                    >En cours</span
-                  >
+                <td
+                  class="border p-4 focus:outline-none focus:ring-2 focus:ring-gp-gold focus:ring-inset"
+                  tabindex="0"
+                >
+                  Grand Palais
+                </td>
+                <td
+                  class="border p-4 focus:outline-none focus:ring-2 focus:ring-gp-gold focus:ring-inset"
+                  tabindex="0"
+                >
+                  10 janvier - 31 mars 2025
+                </td>
+                <td
+                  class="border p-4 focus:outline-none focus:ring-2 focus:ring-gp-gold focus:ring-inset"
+                  tabindex="0"
+                >
+                  <span class="bg-green-100 text-green-800 px-2 py-1 rounded">
+                    En cours
+                  </span>
                 </td>
               </tr>
-              <tr tabindex="0">
+              <tr>
                 <th scope="row" class="border p-4">
-                  <a href="#" class="text-gp-gold hover:underline focus:underline focus:outline-gp-gold focus:outline-offset-2" tabindex="0">
+                  <a
+                    href="#"
+                    class="text-gp-gold hover:underline focus:underline focus:outline-none focus:ring-2 focus:ring-gp-gold focus:ring-offset-2"
+                  >
                     Tous Léger !
                   </a>
                 </th>
-                <td class="border p-4">Musée du Luxembourg</td>
-                <td class="border p-4">19 mars - 20 juillet 2025</td>
-                <td class="border p-4">
-                  <span
-                    class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded"
-                    >À venir</span
-                  >
+                <td
+                  class="border p-4 focus:outline-none focus:ring-2 focus:ring-gp-gold focus:ring-inset"
+                  tabindex="0"
+                >
+                  Musée du Luxembourg
+                </td>
+                <td
+                  class="border p-4 focus:outline-none focus:ring-2 focus:ring-gp-gold focus:ring-inset"
+                  tabindex="0"
+                >
+                  19 mars - 20 juillet 2025
+                </td>
+                <td
+                  class="border p-4 focus:outline-none focus:ring-2 focus:ring-gp-gold focus:ring-inset"
+                  tabindex="0"
+                >
+                  <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded">
+                    À venir
+                  </span>
                 </td>
               </tr>
             </tbody>
@@ -223,16 +275,23 @@
         aria-labelledby="cta-heading"
         class="bg-gp-dark text-white p-12 rounded-xl"
       >
-        <h2 id="cta-heading" class="text-3xl font-bold mb-6">
+        <h2
+          id="cta-heading"
+          class="text-3xl font-bold mb-6 focus:outline-none focus:ring-2 focus:ring-white"
+          tabindex="0"
+        >
           Préparez votre visite
         </h2>
-        <p class="text-xl mb-8">
+        <p
+          class="text-xl mb-8 focus:outline-none focus:ring-2 focus:ring-white"
+          tabindex="0"
+        >
           Réservez vos billets en ligne et découvrez nos expositions
           exceptionnelles
         </p>
         <a
           href="#"
-          class="inline-block bg-gp-gold text-white px-8 py-4 rounded-lg hover:bg-opacity-90 transition-all duration-300 focus:outline-white focus:outline-offset-2"
+          class="inline-block bg-gp-gold text-white px-8 py-4 rounded-lg hover:bg-opacity-90 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gp-dark"
           aria-label="Réserver vos billets pour visiter les expositions"
         >
           Réserver mes billets
@@ -244,70 +303,101 @@
       <div class="max-w-7xl mx-auto px-4 py-16">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div>
-            <h2 class="text-2xl font-bold mb-6">Grand Palais</h2>
+            <h2
+              class="text-2xl font-bold mb-6 focus:outline-none focus:ring-2 focus:ring-white"
+              tabindex="0"
+            >
+              Grand Palais
+            </h2>
             <address
-              class="text-gray-100 not-italic text-lg"
+              class="text-gray-100 not-italic text-lg group focus-within:ring-2 focus-within:ring-white focus-within:rounded-lg p-2"
               aria-label="Adresse du Grand Palais"
             >
-              3 avenue du Général Eisenhower<br />
-              75008 Paris
+              <span
+                class="block focus:outline-none focus:ring-2 focus:ring-white focus:rounded"
+                tabindex="0"
+              >
+                3 avenue du Général Eisenhower
+              </span>
+              <span
+                class="block focus:outline-none focus:ring-2 focus:ring-white focus:rounded"
+                tabindex="0"
+              >
+                75008 Paris
+              </span>
             </address>
           </div>
           <nav aria-label="Liens utiles">
-            <h2 class="text-2xl font-bold mb-6">Liens utiles</h2>
+            <h2
+              class="text-2xl font-bold mb-6 focus:outline-none focus:ring-2 focus:ring-white"
+              tabindex="0"
+            >
+              Liens utiles
+            </h2>
             <ul class="space-y-4">
               <li role="listitem">
                 <a
                   href="#"
-                  class="text-gray-100 hover:text-white transition-colors duration-300 focus:outline-white focus:outline-offset-2"
+                  class="text-gray-100 hover:text-white transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gp-dark"
                   aria-label="Consulter les mentions légales"
-                  >Mentions légales</a
                 >
+                  Mentions légales
+                </a>
               </li>
               <li role="listitem">
                 <a
                   href="#"
-                  class="text-gray-100 hover:text-white transition-colors duration-300 focus:outline-white focus:outline-offset-2"
+                  class="text-gray-100 hover:text-white transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gp-dark"
                   aria-label="Consulter notre politique de confidentialité"
-                  >Politique de confidentialité</a
                 >
+                  Politique de confidentialité
+                </a>
               </li>
               <li role="listitem">
                 <a
                   href="#"
-                  class="text-gray-100 hover:text-white transition-colors duration-300 focus:outline-white focus:outline-offset-2"
+                  class="text-gray-100 hover:text-white transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gp-dark"
                   aria-label="Consulter le plan du site"
-                  >Plan du site</a
                 >
+                  Plan du site
+                </a>
               </li>
             </ul>
           </nav>
           <div>
-            <h2 class="text-2xl font-bold mb-6">Suivez-nous</h2>
+            <h2
+              class="text-2xl font-bold mb-6 focus:outline-none focus:ring-2 focus:ring-white"
+              tabindex="0"
+            >
+              Suivez-nous
+            </h2>
             <ul class="flex space-x-6">
               <li role="listitem">
                 <a
                   href="#"
-                  class="text-gray-100 hover:text-white transition-colors duration-300 focus:outline-white focus:outline-offset-2"
+                  class="text-gray-100 hover:text-white transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gp-dark"
                   aria-label="Suivez-nous sur Facebook"
-                  >Facebook</a
                 >
+                  Facebook
+                </a>
               </li>
               <li role="listitem">
                 <a
                   href="#"
-                  class="text-gray-100 hover:text-white transition-colors duration-300 focus:outline-white focus:outline-offset-2"
+                  class="text-gray-100 hover:text-white transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gp-dark"
                   aria-label="Suivez-nous sur Twitter"
-                  >Twitter</a
                 >
+                  Twitter
+                </a>
               </li>
               <li role="listitem">
                 <a
                   href="#"
-                  class="text-gray-100 hover:text-white transition-colors duration-300 focus:outline-white focus:outline-offset-2"
+                  class="text-gray-100 hover:text-white transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gp-dark"
                   aria-label="Suivez-nous sur Instagram"
-                  >Instagram</a
                 >
+                  Instagram
+                </a>
               </li>
             </ul>
           </div>
