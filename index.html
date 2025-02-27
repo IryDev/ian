@@ -42,37 +42,106 @@
               >GrandPalais</a
             >
           </div>
+
+          <!-- Mobile menu button -->
+          <button
+            type="button"
+            class="md:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-gp-gold hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gp-gold"
+            aria-controls="mobile-menu"
+            aria-expanded="false"
+            id="mobile-menu-button"
+          >
+            <span class="sr-only">Ouvrir le menu principal</span>
+            <!-- Icon when menu is closed -->
+            <svg
+              class="block h-6 w-6"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+
           <div class="hidden md:flex items-center space-x-8">
             <a
               href="#"
-              class="text-gray-700 hover:text-gp-gold transition-colors duration-300"
+              class="text-gray-700 hover:text-gp-gold transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-gp-gold rounded-md"
               aria-label="Voir le programme des expositions"
               >PROGRAMME</a
             >
             <a
               href="#"
-              class="text-gray-700 hover:text-gp-gold transition-colors duration-300"
+              class="text-gray-700 hover:text-gp-gold transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-gp-gold rounded-md"
               aria-label="Accéder au magazine du Grand Palais"
               >MAGAZINE</a
             >
             <a
               href="#"
-              class="text-gray-700 hover:text-gp-gold transition-colors duration-300"
+              class="text-gray-700 hover:text-gp-gold transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-gp-gold rounded-md"
               aria-label="Consulter les informations pratiques"
               >INFOS PRATIQUES</a
             >
             <a
               href="#"
-              class="bg-gp-gold text-white px-6 py-3 rounded hover:bg-opacity-90 transition-all duration-300"
+              class="bg-gp-gold text-white px-6 py-3 rounded hover:bg-opacity-90 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gp-gold"
               aria-label="Acheter des billets pour les expositions"
               >Billetterie</a
             >
             <a
               href="./contact.html"
-              class="border-2 border-gp-dark px-6 py-[10px] rounded hover:bg-gp-dark hover:text-white transition-all duration-300"
+              class="border-2 border-gp-dark px-6 py-[10px] rounded hover:bg-gp-dark hover:text-white transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-gp-dark focus:ring-offset-2"
               aria-label="Accéder au formulaire de contact"
               >Contact</a
             >
+          </div>
+        </div>
+
+        <!-- Mobile menu, show/hide based on menu state -->
+        <div class="md:hidden hidden" id="mobile-menu">
+          <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <a
+              href="#"
+              class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gp-gold hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gp-gold"
+              aria-label="Voir le programme des expositions"
+            >
+              PROGRAMME
+            </a>
+            <a
+              href="#"
+              class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gp-gold hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gp-gold"
+              aria-label="Accéder au magazine du Grand Palais"
+            >
+              MAGAZINE
+            </a>
+            <a
+              href="#"
+              class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gp-gold hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gp-gold"
+              aria-label="Consulter les informations pratiques"
+            >
+              INFOS PRATIQUES
+            </a>
+            <a
+              href="#"
+              class="block px-3 py-2 rounded-md text-base font-medium bg-gp-gold text-white hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gp-gold"
+              aria-label="Acheter des billets pour les expositions"
+            >
+              Billetterie
+            </a>
+            <a
+              href="./contact.html"
+              class="block px-3 py-2 rounded-md text-base font-medium border-2 border-gp-dark hover:bg-gp-dark hover:text-white focus:outline-none focus:ring-2 focus:ring-gp-dark"
+              aria-label="Accéder au formulaire de contact"
+            >
+              Contact
+            </a>
           </div>
         </div>
       </div>
@@ -404,5 +473,6 @@
         </div>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
